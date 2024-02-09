@@ -30,9 +30,11 @@
 
 .title {
     font-weight: 700;
+    text-align: justify;
 }
 
 .text{
-    font-size: 18px;
+    font-size: 14px;
     color: #999;
+    text-align: justify;
 }

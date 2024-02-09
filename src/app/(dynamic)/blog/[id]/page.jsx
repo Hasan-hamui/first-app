@@ -1,9 +1,21 @@
-import { ClassNames } from '@emotion/react'
 import React from 'react'
 import styles from "./page.module.css"
 import Image from 'next/image'
 import { TrendingUpRounded } from '@mui/icons-material'
-export default function Blog(){
+
+async function getData() {
+    const res = await fetch(`https://dummyjson.com/products/${id}`)
+    if (!res.ok) {
+      throw new Error('Failed to fetch data')
+    }
+   
+    return res.json()
+  }
+
+export default async function Post({params}){
+    
+    const data = await getData(params.id)
+    console.log(data)
     return (
         <div className={styles.container}>
 

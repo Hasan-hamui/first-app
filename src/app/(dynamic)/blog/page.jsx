@@ -20,7 +20,7 @@ export default async function Blog(){
             
             {
                 products.map(product => (
-                    <Link href="/id" className={styles.post} key={product.id}>
+                    <Link href={`/blog/${product.id}`} className={styles.post} key={product.id}>
                         <div className={styles.imageContainer}>
                             <Image 
                             className={styles.image}
@@ -31,7 +31,7 @@ export default async function Blog(){
                         </div>
                         <div className={styles.content} >
                                 <h1 className={styles.title}>{product.title}</h1>
-                                <p className={styles.text}>Text</p>
+                                <p className={styles.text}>{product.description}</p>
                         </div>
                     </Link>
                 ))
