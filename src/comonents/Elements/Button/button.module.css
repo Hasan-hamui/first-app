@@ -1,0 +1,13 @@
+.logout {
+    padding: 10px 20px; /* Adjust padding as needed */
+    border: none;
+    background-color: #5F8EFF; /* Change button color */
+    color: white;
+    cursor: pointer;
+    border-radius: 5px; /* Optional: Add rounded corners */
+  }
+  
+  /* Additional styles for hover effect */
+  .logout:hover {
+    background-color: #D63300; /* Change button color on hover */
+  }
